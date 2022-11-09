@@ -40,7 +40,12 @@
             <div>
                 <x-input-label for="avatar" :value="__('Avatar')" />
 
-                <x-text-input id="avatar" class="block mt-1 w-full" type="text" name="avatar" :value="old('avatar')" required autofocus />
+                <select name="avatar" id="">
+                    <option value="https://pics.freeicons.io/uploads/icons/png/6822363841598811069-512.png">avatar1</option>
+                    <option value="https://pics.freeicons.io/uploads/icons/png/628414241548234977-512.png">avatar2</option>
+                    <option value="https://pics.freeicons.io/uploads/icons/png/8658333561561032517-512.png">avatar3</option>
+                    <option value="https://pics.freeicons.io/uploads/icons/png/7463386631561032519-512.png">avatar4</option>
+                </select>
 
                 <x-input-error :messages="$errors->get('avatar')" class="mt-2" />
             </div>
